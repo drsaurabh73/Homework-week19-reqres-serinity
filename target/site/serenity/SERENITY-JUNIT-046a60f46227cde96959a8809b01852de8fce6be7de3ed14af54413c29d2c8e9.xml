@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="Testing different users on the Reqres Application" skipped="0" tests="4" time="11.8" timestamp="2022-06-20T20:31:26.347+01:00[Europe/London]"><testcase name="Check if the user application is accessed by the users"/><testcase name="Check if I can add  user in the application"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;200&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;200&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.reqres.cucumber.steps.MyStepdefs.userCanGetBackAValidStatusCodeOfUsers(MyStepdefs.java:34)&#13;
+✽.Then User can get back a valid status code 201 of users(Reqres.feature:12)&#13;
+</system-err></testcase><testcase name="Check if I can Delete  user in the application"><failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;204&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.reqres.cucumber.steps.MyStepdefs.userVerifyThatTheProductIsDeletedSuccessfullyFromProduct(MyStepdefs.java:65)&#13;
+✽.And User verify that the product is deleted successfully from product(Reqres.feature:19)&#13;
+</system-err></testcase><testcase name="User  verify following application is accessed by the users"><failure message="expected:&lt;...reqres.in/img/faces/[11]-image.jpg&gt; but was:&lt;...reqres.in/img/faces/[6]-image.jpg&gt;" type="java.lang.AssertionError">expected:&lt;...reqres.in/img/faces/[11]-image.jpg&gt; but was:&lt;...reqres.in/img/faces/[6]-image.jpg&gt;</failure><system-err>expected:&lt;...reqres.in/img/faces/[11]-image.jpg&gt; but was:&lt;...reqres.in/img/faces/[6]-image.jpg&gt;&#13;
+in.reqres.cucumber.steps.MyStepdefs.iValidateAvatar(MyStepdefs.java:107)&#13;
+✽.And I validate avatar "https://reqres.in/img/faces/11-image.jpg"(Reqres.feature:29)&#13;
+</system-err></testcase></testsuite>

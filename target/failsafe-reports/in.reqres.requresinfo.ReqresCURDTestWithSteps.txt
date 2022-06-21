@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: in.reqres.requresinfo.ReqresCURDTestWithSteps
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.756 sec <<< FAILURE! - in in.reqres.requresinfo.ReqresCURDTestWithSteps
+test002(in.reqres.requresinfo.ReqresCURDTestWithSteps)  Time elapsed: 0.212 sec  <<< FAILURE!
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at in.reqres.requressteps.UserSteps.getUserInfoByFirstname(UserSteps.java:40)
+	at in.reqres.requresinfo.ReqresCURDTestWithSteps.test002(ReqresCURDTestWithSteps.java:44)
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="in.reqres.requresinfo.ReqresCURDTestWithSteps" skipped="0" tests="3" time="2.22" timestamp="2022-06-07T22:58:04.384+01:00[Europe/London]"><testcase classname="in.reqres.requresinfo.ReqresCURDTestWithSteps" name="This will create a new user"/><testcase classname="in.reqres.requresinfo.ReqresCURDTestWithSteps" name="Verify if the user was added to the application"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.reqres.requressteps.UserSteps.getUserInfoByFirstname(UserSteps.java:40)&#13;
+in.reqres.requresinfo.ReqresCURDTestWithSteps.test002(ReqresCURDTestWithSteps.java:44)&#13;
+</system-err></testcase><testcase classname="in.reqres.requresinfo.ReqresCURDTestWithSteps" name="Delete the user and verify if the user is deleted!"/></testsuite>
